@@ -24,7 +24,7 @@ body {
 
 /*  */
 .header {
-  margin-top: 10%;
+  margin-top: min(5rem, 10%);
 }
 
 .profile-image {
@@ -96,7 +96,7 @@ body {
 .footer {
   display: flex;
   justify-content: center;
-  margin-bottom: 10%;
+  margin-bottom: min(5rem, 10%);
 }
 
 .footer a {
