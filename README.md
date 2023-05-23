@@ -17,14 +17,19 @@ This project is part of a freelance service consisting of a free linktree altern
 
 ## How it works?
 This project is easily customizable and made to be easy to add/remove links.
-You can easily add or remove links using the `links.js` file which is a module that exports an array of objects, each link and its information being inside the properties of that object.
+You can easily add or remove links using the `links.js` file, which is a module that exports an array of objects, each link and its information being inside the properties of that object. In that same file there is also a module that exports a constant that is the profile image link.
 
-There are three properties:
-- **name**: Which is the name that will appear as the title of the link.
-- **url**: A url with the link you want to be redirected.
-- **color**: Color, which is currently configured in the .css only three ```red, blue, orange```.
+There are three properties and a constant of type string:
+- Properties: 
+  - **name**: What is the name that will appear as the title of the link.
+  - **url**: A url with the link you want to redirect.
+  - **color**: Color, which is currently defined in the .css just three ```red, blue, orange```.
+- Constant:
+  - **profileImage**: profile image link.
 
 ```js
+export const profileImage = "./assets/profile_image.jpg";
+
 export const links = [
   {
     name: 'Instagram',
